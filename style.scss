@@ -7,6 +7,12 @@ $secondary-color: #4a4a2f;
     align-items: center;
 }
 
+@mixin flexaround() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,400;1,600;1,700&family=Poppins:wght@200;300;400;500;600;800&display=swap');
@@ -19,9 +25,11 @@ header {
     .left{
         width: 100%;
         height: 50px;
-        background-color: $primary-color;
+        background-color:#6b6b4e;
+        font-weight: bold;
+        font-size: 25px;
        @include tonyCenter();
-        color: #fff;
+        color: #000;
         // position: fixed;
     }
     .right {
@@ -31,7 +39,7 @@ header {
         justify-content: space-between;
         align-items: center;
         box-shadow: 5px 5px 5px black;
-        background-color: lightcyan;
+        background-color: $primary-color;
 
         @media (max-width: 600px) {
             display: flex;
@@ -83,6 +91,19 @@ main {
     overflow: hidden;
     // color: #fff;
 
+    h1{
+        font-size: 70px;
+        @media (max-width: 600px){
+            font-size: 40px;
+        }
+    }
+    h3{
+        font-size: 50px;
+        @media (max-width: 600px){
+            font-size: 30px;
+        }
+    }
+
     @media (max-width: 600px){
         width: 100vw;
         height: calc(100vh - 150px);
@@ -95,17 +116,82 @@ main {
     height: auto;
     padding: 20px;
     text-align: justify;
+    background-color: $primary-color;
 
     h2{
         text-align: center;
         margin:20px 0;
+        font-size: 60px;
+
+        @media(max-width:600px){
+            font-size: 40px;
+        }
+    }
+    p{
+        font-weight: bold;
+        // font-size: 15px;
     }
 }
 
 .services {
     width: 100%;
     height: auto;
-    background-color: whitesmoke;
+    background-color: rgb(240, 222, 222);
+    text-align: center;
 
-    
+    h2{
+        font-weight: bold;
+        font-size: 50px;
+
+        @media(max-width:600px){
+            font-size: 30px;
+        }
+    }
+    p{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .flex {
+        @include flexaround();
+        padding: 20px;
+        // box-shadow: 5px 5px 5px #101010;
+
+        @media (max-width: 600px){
+            display: grid;
+
+        }
+
+        .card {
+            width: 350px;
+            height: auto;
+            box-shadow: 5px 5px 5px #101010;
+            margin: 20px;
+            border-radius: 10px;
+
+            .iconcontainer{
+                color: black;
+                // font-size: 30px;
+            }
+
+            img {
+                width: 100%;
+                height: 300px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: #4a4a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
 }

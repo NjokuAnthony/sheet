@@ -9,7 +9,9 @@
 header .left {
   width: 100%;
   height: 50px;
-  background-color: #e9db8e;
+  background-color: #6b6b4e;
+  font-weight: bold;
+  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,7 +21,7 @@ header .left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: #000;
 }
 
 header .right {
@@ -36,7 +38,7 @@ header .right {
           align-items: center;
   -webkit-box-shadow: 5px 5px 5px black;
           box-shadow: 5px 5px 5px black;
-  background-color: lightcyan;
+  background-color: #e9db8e;
 }
 
 @media (max-width: 600px) {
@@ -116,6 +118,26 @@ main {
   overflow: hidden;
 }
 
+main h1 {
+  font-size: 70px;
+}
+
+@media (max-width: 600px) {
+  main h1 {
+    font-size: 40px;
+  }
+}
+
+main h3 {
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  main h3 {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 600px) {
   main {
     width: 100vw;
@@ -128,16 +150,102 @@ main {
   height: auto;
   padding: 20px;
   text-align: justify;
+  background-color: #e9db8e;
 }
 
 .about h2 {
   text-align: center;
   margin: 20px 0;
+  font-size: 60px;
+}
+
+@media (max-width: 600px) {
+  .about h2 {
+    font-size: 40px;
+  }
+}
+
+.about p {
+  font-weight: bold;
 }
 
 .services {
   width: 100%;
   height: auto;
-  background-color: whitesmoke;
+  background-color: #f0dede;
+  text-align: center;
+}
+
+.services h2 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  .services h2 {
+    font-size: 30px;
+  }
+}
+
+.services p {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.services .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .services .flex {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.services .flex .card {
+  width: 350px;
+  height: auto;
+  -webkit-box-shadow: 5px 5px 5px #101010;
+          box-shadow: 5px 5px 5px #101010;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.services .flex .card .iconcontainer {
+  color: black;
+}
+
+.services .flex .card img {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 15vh;
+  background-color: #4a4a2f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
