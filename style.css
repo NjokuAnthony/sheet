@@ -279,6 +279,61 @@ main h3 {
   transition: 1s ease-in-out;
 }
 
+.review {
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  background: #e9db8e;
+}
+
+@media (max-width: 600px) {
+  .review {
+    width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.review h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.review h1:hover {
+  color: red;
+  font-size: 35px;
+}
+
+.review .post {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.review .post span {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.review .post .fa {
+  color: #6b6b4e;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .review .post {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 5px red;
+            box-shadow: 5px 5px 5px red;
+  }
+}
+
 footer {
   width: 100%;
   height: 15vh;
@@ -292,8 +347,23 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 25px;
   color: #fff;
+}
+
+footer .right img {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+
+footer .right img:hover {
+  font-size: 40px;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
 }
 /*# sourceMappingURL=style.css.map */
