@@ -117,8 +117,8 @@ main {
     }
     h3{
         font-size: 50px;
-        color: black; 
-        margin-top: 100px;
+        color: #fff; 
+        margin-top: 20px;
         @media (max-width: 600px){
             font-size: 30px;
         }
@@ -289,8 +289,8 @@ main {
         @media(max-width: 600px){
             width: 100%;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 5px 5px 5px red;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px black;
         }
     }
 }

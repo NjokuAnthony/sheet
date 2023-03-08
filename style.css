@@ -141,8 +141,8 @@ main h1 {
 
 main h3 {
   font-size: 50px;
-  color: black;
-  margin-top: 100px;
+  color: #fff;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {
@@ -330,9 +330,9 @@ main h3 {
   .review .post {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    -webkit-box-shadow: 5px 5px 5px red;
-            box-shadow: 5px 5px 5px red;
+    border-radius: 30px;
+    -webkit-box-shadow: 5px 5px 5px black;
+            box-shadow: 5px 5px 5px black;
   }
 }
 
