@@ -99,7 +99,7 @@ header {
 main {
     width: 100vw;
     height: calc(100vh - 150px);
-    background-image:url(./images/store.jpeg);
+    background-image:url(./images/cake.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     @include tonyCenter();
@@ -109,13 +109,16 @@ main {
 
     h1{
         font-size: 70px;
+        color: #fff;
+        // margin-bottom: 50px;
         @media (max-width: 600px){
             font-size: 40px;
         }
     }
     h3{
         font-size: 50px;
-        color: #ff0000;
+        color: black; 
+        margin-top: 100px;
         @media (max-width: 600px){
             font-size: 30px;
         }
@@ -316,5 +319,4 @@ footer{
             transition: 1s ease-out;
         }
     }
-
 }

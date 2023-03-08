@@ -109,7 +109,7 @@ header .right .bars {
 main {
   width: 100vw;
   height: calc(100vh - 150px);
-  background-image: url(./images/store.jpeg);
+  background-image: url(./images/cake.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -130,6 +130,7 @@ main {
 
 main h1 {
   font-size: 70px;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
@@ -140,7 +141,8 @@ main h1 {
 
 main h3 {
   font-size: 50px;
-  color: #ff0000;
+  color: black;
+  margin-top: 100px;
 }
 
 @media (max-width: 600px) {
